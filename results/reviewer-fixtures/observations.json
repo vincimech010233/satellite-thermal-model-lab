@@ -1,0 +1,28 @@
+{
+  "classification": "OBSERVED",
+  "checks": [
+    {
+      "case": "fraction-0.0",
+      "expected_energy_J": 500.0,
+      "expected_final_K": 305.0,
+      "matches": true
+    },
+    {
+      "case": "fraction-0.37",
+      "expected_energy_J": 1166.0,
+      "expected_final_K": 311.66,
+      "matches": true
+    },
+    {
+      "case": "fraction-1.0",
+      "expected_energy_J": 2000.0,
+      "expected_final_K": 320.0,
+      "matches": true
+    },
+    {
+      "case": "unequal-capacity-conduction",
+      "max_analytic_error_K": 1.1268837226907635e-05,
+      "energy_conservation_J": -2.2737367544323206e-13
+    }
+  ]
+}

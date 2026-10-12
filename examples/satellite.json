@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "units": {
+    "temperature": "K",
+    "heat_capacity": "J/K",
+    "conductance": "W/K",
+    "area": "m2",
+    "power": "W",
+    "time": "s"
+  },
+  "capacity_J_per_K": [
+    500.0,
+    200.0
+  ],
+  "conductance_W_per_K": [
+    [
+      0.0,
+      0.05
+    ],
+    [
+      0.05,
+      0.0
+    ]
+  ],
+  "area_m2": [
+    0.05,
+    0.04
+  ],
+  "emissivity": [
+    0.8,
+    0.7
+  ],
+  "initial_temperature_K": [
+    290.0,
+    290.0
+  ],
+  "environment_temperature_K": 3.0,
+  "internal_W": [
+    3.0,
+    2.0
+  ],
+  "sunlit_W": [
+    14.0,
+    2.0
+  ],
+  "eclipse_W": [
+    0.0,
+    0.0
+  ],
+  "orbital_period_s": 5400.0,
+  "sunlit_fraction": 0.62,
+  "duration_s": 10800.0,
+  "samples": 601
+}

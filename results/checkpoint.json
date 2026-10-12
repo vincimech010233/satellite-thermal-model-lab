@@ -1,0 +1,10 @@
+{
+  "project": "satellite-thermal-model-lab",
+  "status": "VALIDATED_LOCAL",
+  "classification": "VERIFIED",
+  "limitation": "Lumped synthetic thermal model; numerical consistency only; no physical digital-twin or flight validation.",
+  "review": "docs/REVIEW.md",
+  "tests": "results/validation.json",
+  "publication_ready_for_manual_review": true,
+  "remote_ci": "NOT_VERIFIED"
+}
