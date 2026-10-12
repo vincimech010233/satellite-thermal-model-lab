@@ -1,0 +1,48 @@
+{
+  "role": "Separate critical review agent using the same model as developer; not an independent model or external audit",
+  "timestamp": "2026-10-12T11:54:30.430512+00:00",
+  "project_review": {
+    "project": "satellite-thermal-model-lab",
+    "decision": "APPROVE",
+    "classification": "VERIFIED",
+    "scope": "Public portfolio publication within the retained restricted/synthetic claims",
+    "reviewed_implementation_commit": "017a4ce1135c8a5dbb45b796d137b582f7346b9a",
+    "test_summary": "Python 8",
+    "independent_checks_file": "reviewer-tests-satellite-thermal-model-lab.json",
+    "max_observed_check_peak_rss_kib": 80808,
+    "history_inspection": {
+      "project": "satellite-thermal-model-lab",
+      "classification": "OBSERVED",
+      "historical_commits": 1,
+      "unique_historical_blobs": 38,
+      "binary_blob_count": 1,
+      "sensitive_pattern_findings": [],
+      "unexpected_history_artifacts": [],
+      "author_email_categories": {
+        "github_noreply": 0,
+        "other_configured_address": 1
+      },
+      "readme_publication_text_stale": true
+    },
+    "resolved_findings": [
+      "Current README no longer claims manual-only/no-push status; hosted CI wording is commit-specific",
+      "Draft publication review preserves historical evidence and separate same-model reviewer disclosure"
+    ],
+    "blocking_findings": [],
+    "limitations": [
+      "Synthetic lumped nodes and absorbed loads; no physical spacecraft correspondence",
+      "Same dense-trajectory quadrature and sampled base-only refinement are numerical checks"
+    ],
+    "source_and_test_sha256": {
+      "src/thermal.py": "219102ef98fa01532b9aeee6f8db185879bca3ab3c6947d2165ac2024c78d751",
+      "tests/test_thermal.py": "bd88587d29a81fef37f88bbdbae79c5d232a89aca8c2811cebb5c733f3bfbf8f",
+      "tools/dependency_audit.py": "45bf49acc44285b4578b098b9dee91877cec5d25d91810b5736b3556991a352a"
+    },
+    "draft_readme_sha256": "efc8a7493af411b5ae5938fc00a818675a0bf7111db5a908af3159e6d7ee5d1b",
+    "draft_publication_review_sha256": "be2cc101f43c3c5b3a71854528f429895c0ad3be8bbb510d6685bd956097aa87",
+    "hosted_ci": "NOT_VERIFIED: remote workflow must be checked on published commit"
+  },
+  "scope": "Eight explicitly authorized independent public portfolio repositories; offline synthetic tests only; reviewer made no project source edits or remote changes",
+  "advisory_review": null,
+  "hosted_ci": "NOT_VERIFIED at prepublication review"
+}

@@ -1,0 +1,187 @@
+{
+  "classification": "VERIFIED",
+  "timestamp": "2026-10-12T11:48:17.710887+00:00",
+  "initial_clean": true,
+  "checks": [
+    {
+      "command": ".venv/bin/pip check",
+      "exit": 0,
+      "output": "No broken requirements found.\n"
+    },
+    {
+      "command": ".venv/bin/python -m unittest discover -s tests -v",
+      "exit": 0,
+      "output": "test_convergence_energy_and_sensitivity (test_thermal.ThermalTests.test_convergence_energy_and_sensitivity) ... ok\ntest_invalid (test_thermal.ThermalTests.test_invalid) ... ok\ntest_isolated_conduction (test_thermal.ThermalTests.test_isolated_conduction) ... ok\ntest_linear_heating (test_thermal.ThermalTests.test_linear_heating) ... ok\ntest_radiative_cooling_reference (test_thermal.ThermalTests.test_radiative_cooling_reference) ... ok\ntest_radiative_equilibrium (test_thermal.ThermalTests.test_radiative_equilibrium) ... ok\ntest_reproducible (test_thermal.ThermalTests.test_reproducible) ... ok\ntest_segmented_heating_integral (test_thermal.ThermalTests.test_segmented_heating_integral) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.329s\n\nOK\n"
+    },
+    {
+      "command": "[workspace]/projects/portfolio-delivery-20261012/.venv/bin/ruff check src tests tools --select E4,E7,E9,F",
+      "exit": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": "[workspace]/projects/portfolio-delivery-20261012/.venv/bin/ruff format --check src tests tools",
+      "exit": 0,
+      "output": "3 files already formatted\n"
+    }
+  ],
+  "history_scan": {
+    "unique_blobs": 38,
+    "flags": [],
+    "classification": "OBSERVED",
+    "scope": "Conservative credential/private-host-path patterns; not exhaustive secret detection; all reachable git blobs"
+  },
+  "license": {
+    "mit_present": true,
+    "third_party_metadata": [
+      "LICENSE",
+      "results/licenses.json",
+      "results/python-licenses.json"
+    ],
+    "limitations": "Registry metadata reviewed; exhaustive legal/supply-chain review NOT_VERIFIED. Project license does not relicense third-party dependencies."
+  },
+  "dependency_audit": {
+    "classification": "OBSERVED",
+    "timestamp": "2026-10-12T11:48:17.710887+00:00",
+    "queries": [
+      {
+        "package": {
+          "name": "contourpy",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.4.0"
+      },
+      {
+        "package": {
+          "name": "cycler",
+          "ecosystem": "PyPI"
+        },
+        "version": "0.12.1"
+      },
+      {
+        "package": {
+          "name": "fonttools",
+          "ecosystem": "PyPI"
+        },
+        "version": "4.66.1"
+      },
+      {
+        "package": {
+          "name": "kiwisolver",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.5.1"
+      },
+      {
+        "package": {
+          "name": "matplotlib",
+          "ecosystem": "PyPI"
+        },
+        "version": "3.11.2"
+      },
+      {
+        "package": {
+          "name": "numpy",
+          "ecosystem": "PyPI"
+        },
+        "version": "2.5.4"
+      },
+      {
+        "package": {
+          "name": "packaging",
+          "ecosystem": "PyPI"
+        },
+        "version": "26.3"
+      },
+      {
+        "package": {
+          "name": "pillow",
+          "ecosystem": "PyPI"
+        },
+        "version": "12.3.0"
+      },
+      {
+        "package": {
+          "name": "pyparsing",
+          "ecosystem": "PyPI"
+        },
+        "version": "3.3.3"
+      },
+      {
+        "package": {
+          "name": "python-dateutil",
+          "ecosystem": "PyPI"
+        },
+        "version": "2.9.0.post0"
+      },
+      {
+        "package": {
+          "name": "scipy",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.18.1"
+      },
+      {
+        "package": {
+          "name": "six",
+          "ecosystem": "PyPI"
+        },
+        "version": "1.17.0"
+      },
+      {
+        "package": {
+          "name": "ruff",
+          "ecosystem": "PyPI"
+        },
+        "version": "0.17.0"
+      }
+    ],
+    "response": {
+      "results": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "advisories": 0,
+    "scope": "OSV version lookup; no vulnerability-free or full supply-chain/legal assurance"
+  },
+  "tests_pass": true,
+  "working_tree_clean": true,
+  "reviewed_commit": "017a4ce1135c8a5dbb45b796d137b582f7346b9a",
+  "phase": "Prepublication verification of implementation; documentation/evidence additions follow in the publication commit",
+  "example_reproduction": {
+    "classification": "VERIFIED",
+    "checks": [
+      {
+        "command": [
+          "[workspace]/projects/satellite-thermal-model-lab/.venv/bin/python",
+          "src/thermal.py",
+          "examples/satellite.json",
+          "[workspace]/projects/portfolio-publication-20261012/examples/satellite-thermal-model-lab"
+        ],
+        "exit": 0,
+        "output": ""
+      }
+    ],
+    "semantic_equal": true,
+    "comparison_scope": "Exact JSON semantic equality with committed result",
+    "output": "examples/satellite-thermal-model-lab/report.json"
+  },
+  "authorship_privacy": {
+    "classification": "VERIFIED",
+    "original_git_author_identities_already_in_public_profile_history": true,
+    "address_values_retained_in_this_record": false
+  },
+  "hosted_ci": "NOT_VERIFIED at this prepublication gate; use exact commit GitHub Actions run after push",
+  "known_limitations_retained": true
+}
